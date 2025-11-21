@@ -3,184 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>Document</title>
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form </title>
-    <style>
-       
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Light background */
-            display: flex;
-            justify-content: center;
-            padding-top: 50px;
-        }
-
-        .form-container {
-            border: 1px solid #000;
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        td, th {
-            border: 1px solid #000;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #ddd; 
-            font-weight: bold;
-            width: 35%; 
-        }
-
-        h2 {
-            text-align: center;
-            margin-top: 0;
-            padding: 5px;
-        }
-        
-       
-        input[type="text"], 
-        input[type="password"], 
-        input[type="email"], 
-        input[type="tel"] {
-            width: 95%; 
-            padding: 4px;
-            box-sizing: border-box;
-        }
-        
-        textarea {
-            width: 95%;
-            height: 60px;
-            resize: vertical;
-            box-sizing: border-box;
-        }
-
-        select {
-            padding: 5px;
-        }
-
-        .button-row {
-            text-align: center;
-            border: none;
-        }
-        
-        .button-cell {
-             border: none;
-             text-align: center;
-             padding-top: 15px;
-        }
-        
-        .button-cell input[type="submit"], .button-cell input[type="reset"] {
-            padding: 8px 15px;
-            margin: 0 10px;
-        }
-
-    </style>
-</head>
-<body>
-
-<div class="form-container">
-    <h2>Registration Form</h2>
-    <form action="/submit-form" method="post">
-        <table>
-            <tr>
-                <th>Enter your first name</th>
-                <td><input type="text" name="firstName" placeholder="Enter your first name" required></td>
-            </tr>
-            <tr>
-                <th>Enter your last name</th>
-                <td><input type="text" name="lastName" required></td>
-            </tr>
-            <tr>
-                <th>Enter your password</th>
-                <td><input type="password" name="password" required></td>
-            </tr>
-            <tr>
-                <th>Re-enter your password</th>
-                <td><input type="password" name="rePassword" required></td>
-            </tr>
-            <tr>
-                <th>Enter your email</th>
-                <td><input type="email" name="email" required></td>
-            </tr>
-            <tr>
-                <th>Enter your mobile</th>
-                <td><input type="tel" name="mobile" required></td>
-            </tr>
-            <tr>
-                <th>Enter your address</th>
-                <td><textarea name="address"></textarea></td>
-            </tr>
-            <tr>
-                <th>Select your gender</th>
-                <td>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">female</label>
-                </td>
-            </tr>
-            <tr>
-                <th>Select your hobbies</th>
-                <td>
-                    <input type="checkbox" id="hobby1" name="hobby" value="hobby1">
-                    <label for="hobby1">hobby1</label>
-                    <input type="checkbox" id="hobby2" name="hobby" value="hobby2">
-                    <label for="hobby2">hobby2</label>
-                    <input type="checkbox" id="hobby3" name="hobby" value="hobby3">
-                    <label for="hobby3">hobby3</label>
-                </td>
-            </tr>
-            <tr>
-                <th>Select your DOB</th>
-                <td>
-                    <input type="text" name="dob" placeholder="dd-MM-yyyy"> 
-                    </td>
-            </tr>
-            <tr>
-                <th>Select your country</th>
-                <td>
-                    <select name="country">
-                        <option value="">Select your country</option>
-                        <option value="usa">USA</option>
-                        <option value="canada">Canada</option>
-                        <option value="uk">UK</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <th>Upload your pic</th>
-                <td>
-                    <input type="file" id="pic" name="profilePic">
-                    <label for="pic">Choose File</label>
-                    <span>No file chosen</span>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" class="button-cell">
-                    <input type="submit" value="Save My Data">
-                    <input type="reset" value="Reset Data">
-                </td>
-            </tr>
-        </table>
-    </form>
-</div>
-
-</body>
-</html>
+    <div class="main">
+        <h1>Responsive Card css</h1>
+        <div class="row">
+            <div class="cards">
+                <div class="card">
+                    <i class="fa-brands fa-twitter"></i>
+                    <h2>Twitter</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.</p>
+                    <button class="btn">Read more</button>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-instagram"></i>
+                    <h2>Instagram</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.</p>
+                    <button class="btn">Read more</button>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-youtube"></i>
+                    <h2>youtube</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.</p>
+                    <button class="btn">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    gfhfh
 </body>
 </html>
