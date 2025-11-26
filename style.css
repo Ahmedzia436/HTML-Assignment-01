@@ -1,60 +1,67 @@
 body {
-    font-family: Georgia, serif;
-    margin: 30px;
+    background: #0f1624;
+    font-family: Arial, sans-serif;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 40px;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 42px;
+    margin-bottom: 5px;
 }
 
-.section-title {
-    background-color: #c6d9eb;
-    padding: 8px;
-    font-size: 22px;
+h1 span {
+    color: #2dd4ff;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.subtitle span {
+    color: #ff4b5c;
     font-weight: bold;
-    margin-top: 30px;
-}
-
-.section {
-    padding: 12px 0;
-    position: relative;
-}
-
-.about-text {
-    width: 60%;
-    float: left;
-}
-
-.dog-image {
-    width: 280px;
-    float: right;
-    border: 1px solid #ccc;
 }
 
 table {
+    width: 80%;
+    margin: 0 auto;
     border-collapse: collapse;
-    width: 70%;
+    background: #162033;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-table, th, td {
-    border: 1px solid #333;
-}
-
-th, td {
-    padding: 6px;
+th {
+    background: #111a2c;
+    padding: 14px;
     text-align: left;
+    font-size: 14px;
+    color: #6fa8dc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.subheader {
-    background-color: #e9f2fb;
+td {
+    padding: 16px;
+    border-bottom: 1px solid #1f2a44;
+    font-size: 16px;
+}
+
+tr:hover {
+    background-color: #fff35c;
+}
+
+.site-name {
+    color: #ff4b5c;
+    font-weight: bold;
+}
+
+.highlight {
+    background: #fff35c;
+    color: #000;
     font-weight: bold;
     text-align: center;
-}
-
-form input {
-    width: 180px;
-}
-
-button {
-    margin-top: 10px;
 }
